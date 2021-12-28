@@ -20,6 +20,7 @@ RSpec.describe 'Students show page' do
     expect(page).to have_content(student3.name)
     expect(page).to have_content(student3.age)
     expect(page).to have_content(student3.house)
+    
     expect(Student.count).to eq(3)
   end
 end
